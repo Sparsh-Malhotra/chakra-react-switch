@@ -1,0 +1,23 @@
+{
+  "name": "chakra-react-switch",
+  "version": "0.0.1",
+  "description": "A Switch Component for React & Chakra UI (incl. Loading State)",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "lint": "tsc"
+  },
+  "repository": "https://github.com/Sparsh-Malhotra/chakra-react-switch.git",
+  "author": "Sparsh Malhotra",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "resolutions": {
+    "strip-ansi": "6.0.0"
+  }
+}
