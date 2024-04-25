@@ -6,18 +6,30 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup index.ts --format cjs,esm --dts",
+    "build": "tsup index.ts --format cjs,esm --dts --minify --sourcemap --clean",
     "lint": "tsc"
   },
   "repository": "https://github.com/Sparsh-Malhotra/chakra-react-switch.git",
   "author": "Sparsh Malhotra",
   "license": "MIT",
   "devDependencies": {
+    "@chakra-ui/react": "^2.8.2",
     "@changesets/cli": "^2.27.1",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@types/react": "^18.2.79",
+    "framer-motion": "^11.1.7",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   },
   "resolutions": {
     "strip-ansi": "6.0.0"
+  },
+  "peerDependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "framer-motion": "^11.1.7",
+    "react": "^18.2.0"
   }
 }
